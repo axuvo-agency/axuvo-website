@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Axuvo — we build AI-powered Google review funnels and websites that refuse to be ignored.">
+<title>Axuvo — AI Review Funnels & Websites</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+
+<!-- SVG defs: 4-point sparkle from the logo's A -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="spark" viewBox="0 0 100 100">
+      <path d="M50 0 C55 32 68 45 100 50 C68 55 55 68 50 100 C45 68 32 55 0 50 C32 45 45 32 50 0 Z"/>
+    </symbol>
+    <symbol id="sparkA" viewBox="0 0 40 100">
+      <path d="M20 0 C22.5 36 27 45.5 40 50 C27 54.5 22.5 64 20 100 C17.5 64 13 54.5 0 50 C13 45.5 17.5 36 20 0 Z"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 24 24">
+      <path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 20.9l1.6-7L2 9.2l7.1-.6z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- preloader -->
+<div class="preloader" id="preloader">
+  <svg class="spark" fill="#e9e5da"><use href="#spark"/></svg>
+  <div class="count" id="plcount">000</div>
+</div>
+
+<!-- nav -->
+<nav class="nav">
+  <a href="#top" class="logo hoverable" data-label="Top">
+    <svg fill="#fff"><use href="#spark"/></svg> Axuvo
+  </a>
+  <div class="nav-links">
+    <a href="#how" class="hoverable" data-label="Go">How it works</a>
+    <a href="#services" class="hoverable" data-label="Go">Services</a>
+    <a href="#demo" class="hoverable" data-label="Go">Live demo</a>
+    <a href="#pricing" class="hoverable" data-label="Go" id="navPricing">Pricing</a>
+    <a href="#contact" class="hoverable" data-label="Go">Contact</a>
+  </div>
+  <button class="cta-pill hoverable" data-label="Hi" onclick="window.open('https://wa.me/918590954151?text='+encodeURIComponent('Hi Axuvo, I\u2019d like to start a project.'),'_blank')">Start a project</button>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#how" class="mm-link">How it works</a>
+  <a href="#services" class="mm-link">Services</a>
+  <a href="#demo" class="mm-link">Live demo</a>
+  <a href="#pricing" class="mm-link">Pricing</a>
+  <a href="#contact" class="mm-link">Contact</a>
+  <div class="mm-foot">
+    <a href="https://wa.me/918590954151" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="mailto:axuvo.agency@gmail.com">Email</a>
+    <a href="https://www.instagram.com/axuvo.agency" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+
+<!-- hero -->
+<header class="hero" id="top">
+  <canvas id="halftone"></canvas>
+  <div class="hero-inner">
+    <div class="hero-eyebrow"><span class="dot"></span> Design studio · AI review systems · Websites</div>
+    <h1 class="hero-title" id="heroTitle" aria-label="Axuvo">
+      <span class="ch spark-a">A</span><span class="ch">X</span><span class="ch">U</span><span class="ch">V</span><span class="ch">O</span>
+    </h1>
+    <div class="hero-sub">
+      <p><strong>We build AI-powered Google review funnels and websites that refuse to be ignored.</strong> Reputation, engineered. Interfaces, obsessed over.</p>
+      <div class="hero-scroll"><span class="bar"></span> Scroll to explore</div>
+    </div>
+  </div>
+</header>
+
+<!-- marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="mq">
+    <span>Review Funnels <svg fill="#7d97a8"><use href="#spark"/></svg></span>
+    <span class="m-alt">Web Design <svg fill="#7d97a8"><use href="#spark"/></svg></span>
+    <span>AI Replies <svg fill="#7d97a8"><use href="#spark"/></svg></span>
+    <span class="m-alt">5-Star Growth <svg fill="#7d97a8"><use href="#spark"/></svg></span>
+  </div>
+</div>
+
+<!-- manifesto -->
+<section class="shell manifesto" id="about">
+  <div class="sec-label" style="margin-bottom:5vh">01 — The idea</div>
+  <p id="mani">Your reputation lives in two places: your Google reviews and your website. Most studios design one and ignore the other. Axuvo designs both — as a single, intelligent system that turns five stars into first impressions.</p>
+</section>
+
+<!-- services -->
+<section class="shell" id="services">
+  <div class="sec-head rv">
+    <div class="sec-label">02 — What we do</div>
+    <h2 class="sec-title"><span class="line"><span>Capabilities</span></span></h2>
+  </div>
+  <div class="svc-list">
+    <div class="svc-row hoverable" data-label="View">
+      <div class="svc-num">/01</div>
+      <div class="svc-name">AI Review Funnels</div>
+      <div class="svc-desc">Smart Google-review funnels that route happy customers to five stars and catch feedback before it goes public.</div>
+      <div class="svc-img"><div class="fake" style="background:radial-gradient(circle at 30% 30%,#7d97a8,#0b0b0c 70%)"></div></div>
+    </div>
+    <div class="svc-row hoverable" data-label="View">
+      <div class="svc-num">/02</div>
+      <div class="svc-name">Websites</div>
+      <div class="svc-desc">Award-hunting marketing sites and product experiences with motion baked in from day one.</div>
+      <div class="svc-img"><div class="fake" style="background:conic-gradient(from 200deg,#e9e5da,#0b0b0c,#7d97a8,#0b0b0c)"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- how it works -->
+<section class="shell" id="how">
+  <div class="sec-head rv">
+    <div class="sec-label">03 — The mechanism</div>
+    <h2 class="sec-title"><span class="line"><span>How the funnel</span></span><span class="line"><span class="outline">works</span></span></h2>
+  </div>
+  <p class="price-lead rv">Every customer scans one QR code. <strong>Happy customers are guided straight to Google. Unhappy ones are quietly caught before they post</strong> — so you fix the problem privately instead of publicly. On Growth & Pro, we also send <strong>automated WhatsApp review requests</strong> a few hours after each visit, with a gentle follow-up if there's no reply.</p>
+  <div class="how-grid">
+    <div class="how-step rv">
+      <div class="glyph">
+        <svg viewBox="0 0 48 48" class="g-qr">
+          <path class="qr-fill" d="M6 6h14v14H6V6zm4 4v6h6v-6h-6zM28 6h14v14H28V6zm4 4v6h6v-6h-6zM6 28h14v14H6V28zm4 4v6h6v-6h-6zM28 28h6v6h-6v-6zM36 28h6v4h-6v-4zM28 36h4v6h-4v-6zM34 34h4v4h-4v-4zM38 38h4v4h-4v-4z"/>
+          <rect class="qr-scan" x="4" y="4" width="40" height="3" rx="1.5"/>
+        </svg>
+      </div>
+      <h3>Scan the code</h3>
+      <p>A branded QR card sits on the table, counter or receipt. One tap opens your review flow — no app, no friction.</p>
+      <span class="tag">Table · counter · receipt</span>
+    </div>
+    <div class="how-step good rv">
+      <div class="glyph">
+        <svg viewBox="0 0 48 48" class="g-phone">
+          <rect x="13" y="5" width="22" height="38" rx="4" fill="none" stroke="var(--bone)" stroke-width="2.4"/>
+          <line x1="21" y1="10" x2="27" y2="10" stroke="var(--bone)" stroke-width="2.4" stroke-linecap="round"/>
+          <path class="g-star" d="M24 16l2.3 4.7 5.2.4-3.9 3.4 1.2 5-4.8-2.8-4.8 2.8 1.2-5-3.9-3.4 5.2-.4z" fill="#f5b400"/>
+        </svg>
+      </div>
+      <h3>Rate the visit</h3>
+      <p>Loved it? The customer is sent straight to your Google page to post a public five-star review in seconds.</p>
+      <div class="gate">
+        <svg viewBox="0 0 24 24" style="animation-delay:.1s"><use href="#star"/></svg>
+        <svg viewBox="0 0 24 24" style="animation-delay:.2s"><use href="#star"/></svg>
+        <svg viewBox="0 0 24 24" style="animation-delay:.3s"><use href="#star"/></svg>
+        <svg viewBox="0 0 24 24" style="animation-delay:.4s"><use href="#star"/></svg>
+        <svg viewBox="0 0 24 24" style="animation-delay:.5s"><use href="#star"/></svg>
+      </div>
+      <span class="tag">4–5★ → straight to Google</span>
+    </div>
+    <div class="how-step guard rv">
+      <div class="glyph">
+        <svg viewBox="0 0 48 48" class="g-shield">
+          <path d="M8 10a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H20l-9 8v-8a4 4 0 0 1-3-4V10z" fill="none" stroke="var(--bone)" stroke-width="2.4" stroke-linejoin="round"/>
+          <path class="g-tick" d="M18 19l4 4 8-8" fill="none" stroke="var(--steel)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3>Catch the rest</h3>
+      <p>Unhappy? Their feedback comes privately to you instead of landing on Google — a chance to make it right first.</p>
+      <span class="tag">1–3★ → private feedback</span>
+    </div>
+  </div>
+</section>
+
+<!-- live reply-tool demo -->
+<section class="shell" id="demo">
+  <div class="sec-head rv">
+    <div class="sec-label">04 — See it live</div>
+    <h2 class="sec-title"><span class="line"><span>AI replies,</span></span><span class="line"><span class="outline">on brand.</span></span></h2>
+  </div>
+  <div class="demo-wrap">
+    <div class="demo-copy rv">
+      <h3>Every review, answered in your voice</h3>
+      <p>Axuvo drafts a reply the moment a review lands — warm, on-brand and ready to post. Pick a sample review and watch it write one.</p>
+      <div class="demo-pills" id="demoPills"></div>
+    </div>
+    <div class="demo-card rv">
+      <div class="demo-review">
+        <div class="av" id="dAv">A</div>
+        <div>
+          <div class="meta" id="dMeta">Sample review · Google</div>
+          <div class="rstars" id="dStars"></div>
+          <div class="rtext" id="dText">Pick a review to see Axuvo respond.</div>
+        </div>
+      </div>
+      <div class="demo-reply">
+        <div class="lbl"><svg class="spin"><use href="#spark"/></svg> Axuvo AI reply</div>
+        <div class="demo-out" id="dOut"><span class="cur"></span></div>
+      </div>
+    </div>
+  </div>
+  <p class="price-foot rv" style="text-align:left;margin-top:3vh">Sample reviews shown for demonstration. Replies are generated in your brand's tone.</p>
+</section>
+
+<!-- reviews -->
+<section class="reviews" id="reviews">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="sec-label">05 — What five stars look like</div>
+      <h2 class="sec-title"><span class="line"><span>The kind of</span></span><span class="line"><span class="outline">reviews you'll earn.</span></span></h2>
+    </div>
+  </div>
+  <div class="rev-belt" id="belt1"></div>
+  <div class="rev-belt b2" id="belt2"></div>
+  <div class="shell" style="padding-top:0">
+    <div class="rev-tagline rv">
+      <span class="g-badge"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.6 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h5.9a5 5 0 0 1-2.2 3.3v2.8h3.6c2.1-2 3.3-4.9 3.3-8.3z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.8c-1 .7-2.3 1.1-3.7 1.1-2.9 0-5.3-1.9-6.2-4.6H2.1v2.9A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.8 14a6.6 6.6 0 0 1 0-4.2V6.9H2.1a11 11 0 0 0 0 10z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 0 0 2.1 6.9l3.7 2.9C6.7 7.2 9.1 5.4 12 5.4z"/></svg> Google Reviews</span>
+      <span>Sample reviews shown for demonstration — this is the outcome the funnel is built to create</span>
+    </div>
+  </div>
+</section>
+
+<!-- pricing -->
+<section class="shell" id="pricing">
+  <div class="sec-head rv">
+    <div class="sec-label">06 — Plans & pricing</div>
+    <h2 class="sec-title"><span class="line"><span>Simple pricing,</span></span><span class="line"><span class="outline">zero hidden fees.</span></span></h2>
+  </div>
+  <p class="price-lead rv">Two services, priced clearly. <strong>A custom website is a one-time build. The review funnel is a monthly plan</strong> that runs, monitors and grows your reputation for you.</p>
+
+  <!-- website one-time -->
+  <div class="web-card rv">
+    <div class="l">
+      <h3>Custom Website</h3>
+      <p>A bespoke, animation-rich website built for your brand — designed, developed and launched. Flexible payment options available on request.</p>
+    </div>
+    <div class="r">
+      <div class="amt"><em>from</em> ₹40,000</div>
+      <div class="note">One-time · custom quote</div>
+    </div>
+  </div>
+
+  <!-- funnel tiers -->
+  <div id="pricingTiers"></div>
+
+  <p class="price-foot rv">All funnel plans include a one-time ₹9,999 setup · + 18% GST · cancel anytime after minimum term</p>
+
+  <div style="text-align:center">
+    <div class="compare-toggle hoverable" id="cmpToggle" data-label="Compare"><svg><use href="#spark"/></svg> <span id="cmpLabel">Compare all plans</span></div>
+  </div>
+  <div class="compare-wrap" id="cmpWrap"></div>
+</section>
+
+<!-- honest stats -->
+<section class="shell" style="padding-top:6vh">
+  <div class="stats rv">
+    <div class="stat"><div class="n">5<em>★</em></div><div class="l">The only goal</div></div>
+    <div class="stat"><div class="n">0</div><div class="l">Fake reviews, ever</div></div>
+    <div class="stat"><div class="n">2</div><div class="l">Services, one studio</div></div>
+    <div class="stat"><div class="n">100<em>%</em></div><div class="l">Your brand, your voice</div></div>
+  </div>
+  <p class="price-foot rv" style="margin-top:5vh">A new Kerala studio — taking on our founding clients now. Early partners get founder-level attention on every project.</p>
+</section>
+
+<!-- CTA / footer -->
+<section class="cta" id="contact">
+  <canvas id="halftone2"></canvas>
+  <div class="cta-inner">
+    <span class="sec-label">07 — Say hello</span>
+    <h2><span class="row"><span>Let's make</span></span><span class="row"><span class="outline">something</span></span><span class="row"><span>unmissable</span></span></h2>
+    <button class="cta-btn hoverable" data-label="Go" onclick="location.href='mailto:axuvo.agency@gmail.com'">
+      axuvo.agency@gmail.com <svg fill="#0b0b0c"><use href="#spark"/></svg>
+    </button>
+    <div style="margin-top:26px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="cta-pill hoverable" data-label="Chat" style="border-color:var(--bone);color:var(--bone);padding:12px 24px;border:1px solid var(--bone);border-radius:99px;font-family:var(--font-m);font-size:11px;letter-spacing:.16em;text-transform:uppercase" href="https://wa.me/918590954151" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <span>© 2026 Axuvo</span>
+  <span>Review Funnels × Websites · Kerala, India</span>
+  <span>
+    <a href="https://www.instagram.com/axuvo.agency" class="hoverable" data-label="Open" target="_blank" rel="noopener">Instagram</a> &nbsp;/&nbsp;
+    <a href="https://www.linkedin.com/in/axuvo-agency-561063420" class="hoverable" data-label="Open" target="_blank" rel="noopener">LinkedIn</a> &nbsp;/&nbsp;
+    <a href="https://dribbble.com/axuvo" class="hoverable" data-label="Open" target="_blank" rel="noopener">Dribbble</a>
+  </span>
+</footer>
+
+<!-- pricing modal (opened from nav "Pricing") -->
+<div class="price-modal" id="priceModal" aria-hidden="true">
+  <div class="pm-close hoverable" data-label="Close" id="pmClose"><svg><use href="#spark"/></svg></div>
+  <div class="pm-inner">
+    <div class="sec-head">
+      <div class="sec-label">Plans & pricing</div>
+      <h2 class="sec-title" style="transform:none"><span style="display:block">Choose your plan</span></h2>
+    </div>
+    <div class="web-card">
+      <div class="l"><h3>Custom Website</h3><p>Bespoke, animation-rich website built for your brand. Flexible payment on request.</p></div>
+      <div class="r"><div class="amt"><em>from</em> ₹40,000</div><div class="note">One-time · custom quote</div></div>
+    </div>
+    <div id="modalTiers"></div>
+    <p class="price-foot">All funnel plans include a one-time ₹9,999 setup · + 18% GST · cancel anytime after minimum term</p>
+    <div id="modalCompare" style="margin-top:5vh"></div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
