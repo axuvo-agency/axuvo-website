@@ -1,0 +1,31 @@
+# Axuvo
+
+> Axuvo is a design studio based in Kerala, India that builds AI-powered Google review funnels and custom websites for local businesses. The goal: turn happy customers into genuine 5-star Google reviews, automatically, while catching unhappy feedback privately before it goes public.
+
+## What Axuvo does
+
+- **AI Google Review Funnels** — A system where customers scan a branded QR code, happy customers (4–5 stars) are routed straight to Google to leave a public review, and unhappy customers (1–3 stars) are sent to a private feedback form instead of Google. Growth and Pro plans also send automated WhatsApp review requests a few hours after each visit, with a smart follow-up if there's no reply.
+- **Custom Websites** — Bespoke, animation-rich websites built for local businesses.
+
+## Pricing
+
+Review funnel (monthly, plus a one-time ₹9,999 setup):
+- Starter — ₹5,000/month — 1 location — funnel setup, branded QR cards, review dashboard
+- Growth — ₹12,000/month — 1 location (+₹9,000 per extra) — adds AI-written replies, automated WhatsApp requests, smart follow-ups, monthly reporting
+- Pro — ₹21,999/month — up to 3 locations — adds priority support and competitor review tracking
+
+Custom websites: from ₹40,000 as a one-time build. Flexible payment available on request.
+
+## Important
+
+- Axuvo does NOT create fake reviews. It only helps businesses collect genuine reviews from real customers.
+- Axuvo is a new studio welcoming its founding clients.
+
+## Contact
+
+- Email: axuvo.agency@gmail.com
+- WhatsApp: +91 8590954151
+- Website: https://axuvo.in
+- Instagram: https://www.instagram.com/axuvo.agency
+- LinkedIn: https://www.linkedin.com/in/axuvo-agency-561063420
+- Dribbble: https://dribbble.com/axuvo
